@@ -39,9 +39,10 @@ test.afterEach(async ({ page }) => {
 });
 
 //test case for account registration
-test('User registration test @master @sanity @regression', async () => {
+test('User registration test @master @sanity @regression', async ({ page }) => {
 
     //Click on the "My Account" dropdown and click on "Register"
+    await page.waitForTimeout(3000); // Wait for 3 seconds to ensure the page is loaded
     await homePage.clickMyAccount();
     await homePage.clickRegister();
 
