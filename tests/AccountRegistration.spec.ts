@@ -1,7 +1,7 @@
 /**
  * Test Case: Account Registration
  * 
- * Tags: @smoke  @regression 
+ * Tags: @master @sanity @regression
  * This test case verifies the account registration functionality of the OpenCart application.
  * 
  * Steps:
@@ -39,7 +39,7 @@ test.afterEach(async ({ page }) => {
 });
 
 //test case for account registration
-test('User registration test  @smoke  @regression', async () => {
+test('User registration test @master @sanity @regression', async () => {
 
     //Click on the "My Account" dropdown and click on "Register"
     await homePage.clickMyAccount();

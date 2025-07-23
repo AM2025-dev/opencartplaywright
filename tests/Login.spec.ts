@@ -1,7 +1,7 @@
 /**
  * Test Case: Login with valid credentials
  * Description: This test case verifies that a user can log in successfully with valid credentials.
- * Tags: @smoke @Regression
+Tags: @master @sanity @regression
  *
  * Steps:
  * 1. Navigate to the application URL.
@@ -42,7 +42,7 @@ test.afterEach(async ({ page }) => {
 }); 
             
 // Test case: Login with valid credentials
-test('Login with valid credentials @smoke  @regression', async () => {
+test('User login test @master @sanity @regression',async()=>{
    
     // Navigate to the login page via Home page
     await homePage.clickMyAccount();
